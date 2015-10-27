@@ -11,7 +11,9 @@
     "uglify-js": "^2.5.0"
   },
   "scripts": {
-    "compile": "node_modules/.bin/browserify lib/client.js -t babelify --outfile browser.js"
+    "browserify": "node_modules/.bin/browserify lib/client.js -t babelify --outfile browser.js",
+    "uglify": "node_modules/.bin/uglifyjs --screw-ie8 --mangle --output browser.min.js -- browser.js",
+    "compile": "npm run browserify && npm run uglify"
   },
   "author": "",
   "license": "MIT"
