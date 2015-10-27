@@ -9,7 +9,8 @@
 .Panel-list {
   margin: 0;
   padding: 0;
-  list-style-position: inside;
+  list-style: none;
+  counter-reset: panel;
 }
 
 .Panel-item {
@@ -35,6 +36,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.Panel-webTitle:before {
+  counter-increment: panel;
+  content: counter(panel) ". ";
 }
 
 .Panel-trailText {
