@@ -6,6 +6,55 @@
   display: block;
 }
 
-.Panel-list--uk-news a {
-  color: #D61D00;
+.Panel-list {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
 }
+
+.Panel-item {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.Panel-itemLink {
+  display: block;
+  text-decoration: none;
+}
+
+.Panel-webTitle {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  border-bottom: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Panel-trailText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Panel-list--uk-news .Panel-webTitle {
+  border-color: #D61D00;
+}
+
+.Panel-list--football .Panel-webTitle {
+  border-color: #008000;
+}
+
+.Panel-list--travel .Panel-webTitle {
+  border-color: #066EC9;
+}
+

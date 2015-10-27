@@ -1,4 +1,5 @@
 @import url('components/panel/panel.css');
+@import url('components/tabs/tabs.css');
 
 * {
   box-sizing: border-box;

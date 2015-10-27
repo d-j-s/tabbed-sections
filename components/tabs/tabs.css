@@ -1,0 +1,55 @@
+.Tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.Tabs-item {
+  width: 33%;
+  display: table-cell;
+  padding: 5px;
+  border-left: 1px solid #ddd;
+  background: #ededed;
+}
+
+.Tabs-item:first-child {
+  border: 0;
+}
+
+.Tabs-itemLink,
+.Tabs-itemLink:visited {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.Tabs-item--selected {
+  background: #fff;
+}
+
+.Tabs-item--selected a,
+.Tabs-item--selected a:visited {
+  color: #000;
+}
+
+.Tabs-item--uk-news a,
+.Tabs-item--uk-news a:visited {
+  color: #D61D00;
+}
+
+.Tabs-item--football a,
+.Tabs-item--football a:visited {
+  color: #008000;
+}
+
+.Tabs-item--travel a,
+.Tabs-item--travel a:visited {
+  color: #066EC9;
+}
