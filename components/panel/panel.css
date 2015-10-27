@@ -1,3 +1,11 @@
+.Panel {
+  display: none;
+}
+
+.Panel--selected {
+  display: block;
+}
+
 .Panel-list--uk-news a {
   color: #D61D00;
 }
