@@ -1,8 +1,8 @@
-.Panel {
+.js .Panel {
   display: none;
 }
 
-.Panel--selected {
+.js .Panel--selected {
   display: block;
 }
 
