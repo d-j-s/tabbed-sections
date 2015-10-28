@@ -37,7 +37,7 @@
   text-decoration: none;
 }
 
-.Tabs-item--selected {
+.js .Tabs-item--selected {
   background: #fff;
 }
 

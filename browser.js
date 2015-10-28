@@ -204,6 +204,7 @@ var TabbedSection = (function () {
           div.className = 'Panel' + (i == 0 ? ' Panel--selected' : '');
           div.setAttribute('role', 'tabpanel');
           div.setAttribute('aria-labelledby', tabContent.panelId);
+          div.id = tabContent.panelId;
           div.innerHTML = (0, _templatesPanelJs2['default'])({
             id: resp.edition.id,
             selected: i == 0,
@@ -325,7 +326,7 @@ var _lodashTemplate = require('lodash.template');
 
 var _lodashTemplate2 = _interopRequireDefault(_lodashTemplate);
 
-exports['default'] = (0, _lodashTemplate2['default'])('\n  <ul class="Tabs">\n    <% tabs.forEach(function (tab) { %>\n      <li class="Tabs-item Tabs-item--<%- tab.key %><% if (tab.selected) { %> Tabs-item--selected<% } %>" role="presentation">\n        <a class="Tabs-itemLink" href="" role="tab" aria-controls="<%- tab.panelId %>" aria-selected="<%- tab.selected %>"><%- tab.section %></a>\n      </li>\n    <% }); %>\n  </ul>\n');
+exports['default'] = (0, _lodashTemplate2['default'])('\n  <ul class="Tabs">\n    <% tabs.forEach(function (tab) { %>\n      <li class="Tabs-item Tabs-item--<%- tab.key %><% if (tab.selected) { %> Tabs-item--selected<% } %>" role="presentation">\n        <a class="Tabs-itemLink" href="#<%- tab.panelId %>" role="tab" aria-controls="<%- tab.panelId %>" aria-selected="<%- tab.selected %>"><%- tab.section %></a>\n      </li>\n    <% }); %>\n  </ul>\n');
 module.exports = exports['default'];
 
 },{"lodash.template":205}],7:[function(require,module,exports){
