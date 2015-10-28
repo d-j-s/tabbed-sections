@@ -1,0 +1,124 @@
+.Tabs,
+.Tabs *,
+.Panel,
+.Panel * {
+  box-sizing: border-box;
+}
+
+.Tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.Tabs-item {
+  width: 33%;
+  display: table-cell;
+  padding: 5px;
+  border-left: 1px solid #ddd;
+  background: #ededed;
+}
+
+.Tabs-item:first-child {
+  border: 0;
+}
+
+.Tabs-itemLink,
+.Tabs-itemLink:visited {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.Tabs-item--selected {
+  background: #fff;
+}
+
+.Tabs-item--uk-news a,
+.Tabs-item--uk-news a:visited {
+  color: #D61D00;
+}
+
+.Tabs-item--football a,
+.Tabs-item--football a:visited {
+  color: #008000;
+}
+
+.Tabs-item--travel a,
+.Tabs-item--travel a:visited {
+  color: #066EC9;
+}
+
+
+.js .Panel {
+  display: none;
+}
+
+.js .Panel--selected {
+  display: block;
+}
+
+.Panel-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: panel;
+}
+
+.Panel-item {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.Panel-itemLink {
+  display: block;
+  text-decoration: none;
+}
+
+.Panel-webTitle {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  border-bottom: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Panel-webTitle:before {
+  counter-increment: panel;
+  content: counter(panel) ". ";
+}
+
+.Panel-trailText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Panel-list--uk-news .Panel-webTitle {
+  border-color: #D61D00;
+}
+
+.Panel-list--football .Panel-webTitle {
+  border-color: #008000;
+}
+
+.Panel-list--travel .Panel-webTitle {
+  border-color: #066EC9;
+}
